@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP8266-12E_ESP-12E:ESP8266-12E_ESP-12E U1
+U 1 1 5CD8808A
+P 5550 3550
+F 0 "U1" H 5550 4417 50  0000 C CNN
+F 1 "ESP8266-12E_ESP-12E" H 5550 4326 50  0000 C CNN
+F 2 "XCVR_ESP8266-12E/ESP-12E" H 5550 3550 50  0001 L BNN
+F 3 "" H 5550 3550 50  0001 L BNN
+F 4 "None" H 5550 3550 50  0001 L BNN "Field4"
+F 5 "ESP8266-12E/ESP-12E" H 5550 3550 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 5550 3550 50  0001 L BNN "Field6"
+F 7 "AI-Thinker" H 5550 3550 50  0001 L BNN "Field7"
+F 8 "This WiFi module has a 32-bit MCU micro and clock speeds supporting 80 MHz or 160 MHz. Supports the RTOS and integrated Wi-Fi MAC/BB/RF/PA/LNA, and has an on-board antenna." H 5550 3550 50  0001 L BNN "Field8"
+	1    5550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5CD89F8E
+P 3250 4050
+F 0 "BT1" H 3358 4096 50  0000 L CNN
+F 1 "Battery" H 3358 4005 50  0000 L CNN
+F 2 "" V 3250 4110 50  0001 C CNN
+F 3 "~" V 3250 4110 50  0001 C CNN
+	1    3250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3850 3250 2200
+Wire Wire Line
+	6500 2200 6500 2950
+Wire Wire Line
+	6500 2950 6250 2950
+Wire Wire Line
+	3250 4250 3250 4850
+Wire Wire Line
+	6500 4850 6500 4250
+Wire Wire Line
+	6500 4250 6250 4250
+Wire Wire Line
+	6250 3950 6500 3950
+Wire Wire Line
+	6500 3950 6500 4250
+Connection ~ 6500 4250
+Wire Wire Line
+	4850 3750 4400 3750
+Wire Wire Line
+	4400 3750 4400 4850
+Wire Wire Line
+	4400 4850 5400 4850
+Wire Wire Line
+	4850 3850 4550 3850
+Wire Wire Line
+	4550 3850 4550 3050
+Wire Wire Line
+	4550 2200 6500 2200
+Wire Wire Line
+	4850 3050 4550 3050
+Connection ~ 4550 3050
+Wire Wire Line
+	4550 3050 4550 2200
+NoConn ~ 6250 3250
+NoConn ~ 6250 3450
+NoConn ~ 6250 3650
+NoConn ~ 6250 3750
+NoConn ~ 6250 3850
+NoConn ~ 6250 4050
+NoConn ~ 4850 4250
+NoConn ~ 4850 4150
+NoConn ~ 4850 4050
+NoConn ~ 4850 3950
+NoConn ~ 4850 3550
+NoConn ~ 4850 3450
+NoConn ~ 4850 3350
+NoConn ~ 4850 3250
+NoConn ~ 4850 3150
+NoConn ~ 4850 2950
+$Comp
+L power:GND #PWR0101
+U 1 1 5CD92148
+P 3250 4850
+F 0 "#PWR0101" H 3250 4600 50  0001 C CNN
+F 1 "GND" H 3255 4677 50  0000 C CNN
+F 2 "" H 3250 4850 50  0001 C CNN
+F 3 "" H 3250 4850 50  0001 C CNN
+	1    3250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CD932B0
+P 5400 4850
+F 0 "#PWR0102" H 5400 4600 50  0001 C CNN
+F 1 "GND" H 5405 4677 50  0000 C CNN
+F 2 "" H 5400 4850 50  0001 C CNN
+F 3 "" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 4850
+Wire Wire Line
+	5400 4850 6500 4850
+Text Label 3250 2200 1    50   ~ 0
+VDD
+Text Label 4950 2200 0    50   ~ 0
+VDD
+$EndSCHEMATC
