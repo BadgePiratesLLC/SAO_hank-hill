@@ -14,4 +14,132 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5CD4F96E
+P 3000 3000
+F 0 "D1" H 2993 2745 50  0000 C CNN
+F 1 "LED" H 2993 2836 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3000 3000 50  0001 C CNN
+F 3 "~" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5CD50D31
+P 3000 3450
+F 0 "D2" H 2993 3195 50  0000 C CNN
+F 1 "LED" H 2993 3286 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CD5209E
+P 2400 3800
+F 0 "R1" H 2470 3846 50  0000 L CNN
+F 1 "1K" H 2470 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2330 3800 50  0001 C CNN
+F 3 "~" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3650 2400 3450
+Wire Wire Line
+	2400 3000 2850 3000
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5CE07F40
+P 1450 3950
+F 0 "BT1" H 1568 4046 50  0000 L CNN
+F 1 "Battery_Cell" H 1568 3955 50  0000 L CNN
+F 2 "Battery:Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles" V 1450 4010 50  0001 C CNN
+F 3 "~" V 1450 4010 50  0001 C CNN
+	1    1450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3750 1450 3000
+Text Label 1800 3000 0    50   ~ 0
+VDD
+Text Label 2600 4650 0    50   ~ 0
+VDD
+Wire Wire Line
+	1450 4050 1450 5150
+Wire Wire Line
+	1450 3000 2000 3000
+Wire Wire Line
+	2850 3450 2400 3450
+Connection ~ 2400 3450
+Wire Wire Line
+	2400 3450 2400 3000
+Wire Wire Line
+	2400 3950 2400 4650
+$Comp
+L power:GND #PWR0101
+U 1 1 5D16F601
+P 3150 5800
+F 0 "#PWR0101" H 3150 5550 50  0001 C CNN
+F 1 "GND" V 3155 5672 50  0000 R CNN
+F 2 "" H 3150 5800 50  0001 C CNN
+F 3 "" H 3150 5800 50  0001 C CNN
+	1    3150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D170087
+P 3150 3000
+F 0 "#PWR0102" H 3150 2750 50  0001 C CNN
+F 1 "GND" V 3155 2872 50  0000 R CNN
+F 2 "" H 3150 3000 50  0001 C CNN
+F 3 "" H 3150 3000 50  0001 C CNN
+	1    3150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D170A35
+P 3150 3450
+F 0 "#PWR0103" H 3150 3200 50  0001 C CNN
+F 1 "GND" V 3155 3322 50  0000 R CNN
+F 2 "" H 3150 3450 50  0001 C CNN
+F 3 "" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5D171238
+P 1450 5150
+F 0 "#PWR0104" H 1450 4900 50  0001 C CNN
+F 1 "GND" H 1455 4977 50  0000 C CNN
+F 2 "" H 1450 5150 50  0001 C CNN
+F 3 "" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3550 4700
+$Comp
+L badgelife_shitty_addon_v169bis:Badgelife_sao_connector_v169bis X1
+U 1 1 5D1970FB
+P 3350 5250
+F 0 "X1" H 3678 5296 50  0000 L CNN
+F 1 "Badgelife_sao_connector_v169bis" H 3678 5205 50  0000 L CNN
+F 2 "my-ki-cad-parts:Badgelife-SAOv169-SAO-2x3" H 3350 5450 50  0001 C CNN
+F 3 "" H 3350 5450 50  0001 C CNN
+	1    3350 5250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 4700
+NoConn ~ 3550 5800
+NoConn ~ 3350 5800
+Wire Wire Line
+	3150 4700 3150 4650
+Wire Wire Line
+	2400 4650 3150 4650
 $EndSCHEMATC
